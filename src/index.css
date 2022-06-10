@@ -1,13 +1,134 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-container {
+  height: 220px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  gap: 25px;
+  background-color: black;
+  color: white;
+}
+
+#logo {
+}
+
+.nav-links {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.nav-link {
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.about-products {
+  height: 630px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  background-image: url("./assets/jars-for-background-resized.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-products::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-products h1 {
+  position: relative;
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+.about-products p {
+  position: relative;
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding: 10%;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 30px;
+  width: 80%;
+  margin: 50px 0;
+}
+
+.honey-card {
+  display: flex;
+  margin: 120px auto;
+}
+
+.honey-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  width: 520px;
+  height: 300px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.honey-text::before,
+.honey-text::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 260px solid transparent;
+  border-right: 260px solid transparent;
+}
+
+.honey-text::before {
+  bottom: 100%;
+  border-bottom: 100px solid black;
+}
+
+.honey-text::after {
+  top: 100%;
+  border-top: 100px solid black;
+}
+
+#jar-pic {
+  top: -100px;
 }
