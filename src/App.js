@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import HoneyCard from "./components/HoneyCard";
 import Navbar from "./components/Navbar";
 import ProductDescription from "./components/ProductDescription";
@@ -71,6 +72,7 @@ function App() {
           />
         );
       })}
+      <Footer />
     </div>
   );
 }

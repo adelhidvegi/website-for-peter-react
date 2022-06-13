@@ -132,3 +132,17 @@
 #jar-pic {
   top: -100px;
 }
+
+.footer-container {
+  width: 100%;
+  height: 10rem;
+  background-color: black;
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
