@@ -8,9 +8,9 @@ const Footer = () => {
       <footer>
         <h2>A közösségi médiában itt találsz meg minket:</h2>
         <div className="social-links">
-          <FacebookIcon />
-          <InstagramIcon />
-          <YouTubeIcon />
+          <FacebookIcon fontSize="large" />
+          <InstagramIcon fontSize="large" />
+          <YouTubeIcon fontSize="large" />
         </div>
       </footer>
     </div>

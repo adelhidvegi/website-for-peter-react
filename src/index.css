@@ -8,24 +8,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1rem;
+  background: linear-gradient(0.25turn, #fbf3d8, white, #fbf3d8);
 }
 
+/* ----- Navbar ---- */
+
 .navbar-container {
-  height: 220px;
-  width: 100vw;
+  height: 13rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: space-between;
   justify-content: center;
-  gap: 25px;
   background-color: black;
-  color: white;
 }
 
 #logo {
+  margin: 1.1rem;
 }
-
 .nav-links {
   width: 100%;
   height: 30%;
@@ -33,18 +35,21 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px 0;
+  padding: 1.2rem 0;
+  background-color: black;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
 }
 
 .nav-link {
   position: relative;
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 800;
   text-decoration: none;
   color: white;
 }
+
+/* ----- About ---- */
 
 .about-products {
   height: 630px;
@@ -84,18 +89,47 @@
   padding: 10%;
 }
 
+/* ----- Cards ---- */
+
 .card-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
-  width: 80%;
-  margin: 50px 0;
+  width: 70%;
+  margin: 40px 0;
 }
 
 .honey-card {
   display: flex;
-  margin: 120px auto;
+  position: relative;
+  height: 400px;
+  margin: 20px auto;
+  background-color: #ab722b;
+}
+
+.honey-card::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-right: 100px solid #ab722b;
+  border-bottom: 200px solid transparent;
+  left: -100px;
+  z-index: 1;
+}
+
+.honey-card::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-left: 100px solid #ab722b;
+  border-bottom: 200px solid transparent;
+  right: -100px;
 }
 
 .honey-text {
@@ -104,38 +138,57 @@
   align-items: center;
   justify-content: space-evenly;
   position: relative;
-  width: 520px;
-  height: 300px;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+  width: 280px;
+  height: 400px;
+  padding: 1rem 0;
+  -webkit-transform: scale(0.98, 0.98);
+  -moz-transform: scale(0.98, 0.98);
+  transform: scale(0.98, 0.98);
+  z-index: 1;
+  background-color: white;
 }
 
-.honey-text::before,
+.honey-text::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-right: 100px solid white;
+  border-bottom: 200px solid transparent;
+  left: -99px;
+}
+
 .honey-text::after {
   content: "";
   position: absolute;
   width: 0;
-  border-left: 260px solid transparent;
-  border-right: 260px solid transparent;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-left: 100px solid white;
+  border-bottom: 200px solid transparent;
+  right: -99px;
 }
 
-.honey-text::before {
-  bottom: 100%;
-  border-bottom: 100px solid black;
+.honey-text h1 {
+  color: #312f17;
 }
 
-.honey-text::after {
-  top: 100%;
-  border-top: 100px solid black;
+.honey-text p {
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 #jar-pic {
   top: -100px;
+  padding: 2rem;
 }
+
+/* ----- Footer ---- */
 
 .footer-container {
   width: 100%;
-  height: 10rem;
+  height: 12rem;
   background-color: black;
   color: white;
 }
@@ -145,4 +198,14 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+  padding: 2.5rem;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }

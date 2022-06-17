@@ -10,7 +10,7 @@ function App() {
       name: "Méz1",
       packaging: "1000 gr",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor odio, dictum eu tincidunt et, elementum a nisi. Curabitur elit ex, varius vel nisl ut, sollicitudin placerat diam.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus sollicitudin bibendum. Phasellus eget nisl lobortis, pellentesque nisl at, accumsan tellus. Pellentesque venenatis lobortis lorem. Nunc feugiat molestie ex et aliquet. Vestibulum non augue metus.",
       price: "3000 Ft",
     },
 
@@ -19,7 +19,7 @@ function App() {
       name: "Méz2",
       packaging: "1000 gr",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor odio, dictum eu tincidunt et, elementum a nisi. Curabitur elit ex, varius vel nisl ut, sollicitudin placerat diam.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus sollicitudin bibendum. Phasellus eget nisl lobortis, pellentesque nisl at, accumsan tellus. Pellentesque venenatis lobortis lorem. Nunc feugiat molestie ex et aliquet. Vestibulum non augue metus.",
       price: "3000 Ft",
     },
     {
@@ -27,7 +27,7 @@ function App() {
       name: "Méz3",
       packaging: "1000 gr",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor odio, dictum eu tincidunt et, elementum a nisi. Curabitur elit ex, varius vel nisl ut, sollicitudin placerat diam.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus sollicitudin bibendum. Phasellus eget nisl lobortis, pellentesque nisl at, accumsan tellus. Pellentesque venenatis lobortis lorem. Nunc feugiat molestie ex et aliquet. Vestibulum non augue metus.",
       price: "3000 Ft",
     },
     {
@@ -35,7 +35,7 @@ function App() {
       name: "Méz4",
       packaging: "1000 gr",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor odio, dictum eu tincidunt et, elementum a nisi. Curabitur elit ex, varius vel nisl ut, sollicitudin placerat diam.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus sollicitudin bibendum. Phasellus eget nisl lobortis, pellentesque nisl at, accumsan tellus. Pellentesque venenatis lobortis lorem. Nunc feugiat molestie ex et aliquet. Vestibulum non augue metus.",
       price: "3000 Ft",
     },
     {
@@ -43,7 +43,7 @@ function App() {
       name: "Méz5",
       packaging: "1000 gr",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor odio, dictum eu tincidunt et, elementum a nisi. Curabitur elit ex, varius vel nisl ut, sollicitudin placerat diam.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus sollicitudin bibendum. Phasellus eget nisl lobortis, pellentesque nisl at, accumsan tellus. Pellentesque venenatis lobortis lorem. Nunc feugiat molestie ex et aliquet. Vestibulum non augue metus.",
       price: "3000 Ft",
     },
     {
@@ -51,7 +51,7 @@ function App() {
       name: "Méz6",
       packaging: "1000 gr",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor odio, dictum eu tincidunt et, elementum a nisi. Curabitur elit ex, varius vel nisl ut, sollicitudin placerat diam.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus sollicitudin bibendum. Phasellus eget nisl lobortis, pellentesque nisl at, accumsan tellus. Pellentesque venenatis lobortis lorem. Nunc feugiat molestie ex et aliquet. Vestibulum non augue metus.",
       price: "3000 Ft",
     },
   ];
