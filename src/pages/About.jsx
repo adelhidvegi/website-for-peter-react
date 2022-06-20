@@ -1,3 +1,4 @@
+import AboutUs from "../components/AboutUs";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
@@ -5,7 +6,7 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <h1>About</h1>
+      <AboutUs />
       <Footer />;
     </>
   );

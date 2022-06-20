@@ -4,18 +4,22 @@
   box-sizing: border-box;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,600;1,700&display=swap");
+/*  font-family: "Source Serif Pro", serif;*/
+
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 1rem;
   background: linear-gradient(0.25turn, #fbf3d8, white, #fbf3d8);
+  /*  font-family: "Source Serif Pro", serif;*/
 }
 
 /* ----- Navbar ---- */
 
 .navbar-container {
-  height: 13rem;
+  height: 12.5rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -44,12 +48,37 @@
 .nav-link {
   position: relative;
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
   text-decoration: none;
   color: white;
 }
 
-/* ----- About ---- */
+/* ----- About Us ---- */
+
+.about-us {
+  display: flex;
+  background-color: #fbf3d8;
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.about-us p {
+  padding: 3rem 4rem;
+  font-size: 1.2rem;
+}
+
+/* ----- Products ---- */
 
 .about-products {
   height: 630px;
@@ -72,13 +101,14 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .about-products h1 {
   position: relative;
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin-top: 3rem;
 }
 
 .about-products p {
@@ -86,7 +116,7 @@
   color: #ffffff;
   font-size: 1.2rem;
   line-height: 1.5rem;
-  padding: 10%;
+  padding: 7% 10%;
 }
 
 /* ----- Cards ---- */

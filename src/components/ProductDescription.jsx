@@ -14,7 +14,13 @@ const ProductDescription = () => {
         In faucibus fermentum felis quis euismod. Curabitur blandit odio ut
         ligula pretium placerat. Maecenas porta mollis magna, ut condimentum
         purus tincidunt eu. Suspendisse tincidunt nec lacus nec suscipit. Sed
-        nec consectetur sapien, et volutpat mauris.
+        nec consectetur sapien, et volutpat mauris. <br /> In metus vulputate eu
+        scelerisque felis. Gravida quis blandit turpis cursus in hac habitasse
+        platea dictumst. Arcu bibendum at varius vel. Molestie nunc non blandit
+        massa enim.Tristique senectus et netus et. Sed ullamcorper morbi
+        tincidunt ornare massa eget egestas. Tincidunt lobortis feugiat vivamus
+        at augue eget. Amet consectetur adipiscing elit pellentesque habitant
+        morbi tristique senectus et.
       </p>
     </div>
   );
