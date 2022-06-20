@@ -5,16 +5,16 @@ const Navbar = () => {
     <div class="navbar-container">
       <img src={logo} alt="logo" id="logo" height={110} />
       <div class="nav-links">
-        <a class="nav-link" href="#home">
+        <a class="nav-link" href="/">
           Főoldal
         </a>
-        <a class="nav-link" href="#about">
+        <a class="nav-link" href="/about">
           Rólunk
         </a>
-        <a class="nav-link" href="#products">
+        <a class="nav-link" href="/products">
           Termékek
         </a>
-        <a class="nav-link" href="#contact">
+        <a class="nav-link" href="/contact">
           Kapcsolat
         </a>
       </div>
