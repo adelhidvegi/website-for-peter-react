@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/website-for-peter-react/static/css/main.f6e96ed3.css",
+    "main.js": "/website-for-peter-react/static/js/main.887ffbe2.js",
+    "static/js/787.3871da17.chunk.js": "/website-for-peter-react/static/js/787.3871da17.chunk.js",
+    "static/media/for-about-us.jpg": "/website-for-peter-react/static/media/for-about-us.d9c6c932f265cbde01a8.jpg",
+    "static/media/jars-for-background-resized.jpg": "/website-for-peter-react/static/media/jars-for-background-resized.5e94c3afca735716ebed.jpg",
+    "static/media/honey-jar-picture.jpg": "/website-for-peter-react/static/media/honey-jar-picture.558a8543cd2ab506b5a3.jpg",
+    "index.html": "/website-for-peter-react/index.html",
+    "main.f6e96ed3.css.map": "/website-for-peter-react/static/css/main.f6e96ed3.css.map",
+    "main.887ffbe2.js.map": "/website-for-peter-react/static/js/main.887ffbe2.js.map",
+    "787.3871da17.chunk.js.map": "/website-for-peter-react/static/js/787.3871da17.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6e96ed3.css",
+    "static/js/main.887ffbe2.js"
+  ]
+}
