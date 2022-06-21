@@ -5,7 +5,7 @@ const Navbar = () => {
     <div class="navbar-container">
       <img src={logo} alt="logo" id="logo" height={100} />
       <div class="nav-links">
-        <a class="nav-link" href="/">
+        <a class="nav-link" href="/website-for-peter-react/">
           Főoldal
         </a>
         <a class="nav-link" href="/website-for-peter-react/about">
