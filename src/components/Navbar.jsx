@@ -8,13 +8,13 @@ const Navbar = () => {
         <a class="nav-link" href="/">
           Főoldal
         </a>
-        <a class="nav-link" href="/about">
+        <a class="nav-link" href="/website-for-peter-react/about">
           Rólunk
         </a>
-        <a class="nav-link" href="/products">
+        <a class="nav-link" href="/website-for-peter-react/products">
           Termékek
         </a>
-        <a class="nav-link" href="/contact">
+        <a class="nav-link" href="/website-for-peter-react/contact">
           Kapcsolat
         </a>
       </div>

@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/website-for-peter-react">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
