@@ -1,22 +1,23 @@
 import logo from "../assets/meheszet-logo-resized.jpg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div class="navbar-container">
       <img src={logo} alt="logo" id="logo" height={100} />
       <div class="nav-links">
-        <a class="nav-link" href="/website-for-peter-react/">
+        <Link class="nav-link" to="/">
           Főoldal
-        </a>
-        <a class="nav-link" href="/website-for-peter-react/about">
+        </Link>
+        <Link class="nav-link" to="/about">
           Rólunk
-        </a>
-        <a class="nav-link" href="/website-for-peter-react/products">
+        </Link>
+        <Link class="nav-link" to="/products">
           Termékek
-        </a>
-        <a class="nav-link" href="/website-for-peter-react/contact">
+        </Link>
+        <Link class="nav-link" to="/contact">
           Kapcsolat
-        </a>
+        </Link>
       </div>
     </div>
   );
