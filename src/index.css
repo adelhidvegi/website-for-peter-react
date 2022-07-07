@@ -57,8 +57,11 @@
 /* ----- About Us ---- */
 
 .about-us {
-  display: flex;
-  background-color: #fbf3d8;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-img-container {
 }
 
 .about-text-container {

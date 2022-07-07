@@ -1,9 +1,15 @@
-import picture from "../assets/for-about-us.jpg";
+import img1 from "../assets/beekeeper.jpg";
+import img2 from "../assets/bee_hive.jpg";
+import img3 from "../assets/bee_on_flower.jpg";
 
 const AboutUs = () => {
   return (
     <div className="about-us">
-      <img src={picture} alt="about-us-pic" width="470" />
+      <div className="about-img-container">
+        <img src={img1} alt="img1" id="img1" width="470" />
+        <img src={img2} alt="img2" id="img2" width="470" />
+        <img src={img3} alt="img3" id="img3" width="470" />
+      </div>
       <div className="about-text-container">
         <h1>A Méhészetről</h1>
         <p>
