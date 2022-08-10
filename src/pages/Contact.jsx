@@ -1,3 +1,5 @@
+import ContactDetails from "../components/ContactDetails";
+import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
@@ -5,8 +7,12 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <h1>Contact</h1>
-      <Footer />;
+      <h1 id="contact-header">Elérhetőségeink</h1>
+      <div className="contact-page-container">
+        <ContactDetails />
+        <ContactForm />
+      </div>
+      <Footer />
     </>
   );
 };

@@ -8,9 +8,6 @@
 /*  font-family: "Source Serif Pro", serif;*/
 
 .App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-size: 1rem;
   background: linear-gradient(0.25turn, #fbf3d8, white, #fbf3d8);
   /*  font-family: "Source Serif Pro", serif;*/
@@ -84,7 +81,7 @@
 /* ----- Products ---- */
 
 .about-products {
-  height: 630px;
+  height: 560px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -217,7 +214,169 @@
   padding: 2rem;
 }
 
-/* ----- Footer ---- */
+/* ----- Contact ----- */
+
+.contact-page-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 3rem;
+}
+
+#contact-header {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.contact-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-email-address-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.contacts-wrapper {
+  display: flex;
+}
+
+.contact-card-container {
+  width: 25rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 3rem;
+  background-color: white;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  align-items: center;
+}
+
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom right, #fbf3d8, #e1951b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -1rem; */
+}
+
+iframe {
+  width: 400px;
+  height: 280px;
+  border: none;
+  margin: 2rem;
+}
+
+.contact-form-container {
+  position: relative;
+  width: 50%;
+  background-color: black;
+  color: black;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  background-image: url("./assets/sarah-janes-tjiP6f7QiOs-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.contact-form-container::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.form-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 5fr 1fr;
+  grid-template-areas:
+    "header header"
+    "input1 input1"
+    "input2 input2"
+    "input3 input3"
+    "input4 input4"
+    "button button";
+  gap: 1rem;
+  padding: 2rem;
+  margin: auto;
+}
+
+#form-h1 {
+  grid-area: header;
+  text-align: center;
+}
+
+#name-input,
+#email-address-input,
+#phone-number-input,
+#message-input {
+  border-radius: 0.8rem;
+  border: none;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+  padding-left: 0.5rem;
+  font-size: 1.1rem;
+}
+
+#name-input:focus,
+#email-address-input:focus,
+#phone-number-input:focus,
+#message-input:focus {
+  outline: 3px solid #e1951b;
+}
+
+#name-input {
+  grid-area: input1;
+}
+
+#email-address-input {
+  grid-area: input2;
+}
+
+#phone-number-input {
+  grid-area: input3;
+}
+
+#message-input {
+  grid-area: input4;
+  padding-top: 0.5rem;
+}
+
+#send-button {
+  grid-area: button;
+  width: 150px;
+  height: 40px;
+  margin: auto;
+  border-radius: 1.3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #f3d3a1;
+  color: black;
+  border: 2px solid black;
+}
+
+/* ----- Footer ----- */
 
 .footer-container {
   width: 100%;
