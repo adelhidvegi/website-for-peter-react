@@ -1,0 +1,24 @@
+.about-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-img-container {
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.about-us p {
+  padding: 3rem 4rem;
+  font-size: 1.2rem;
+}

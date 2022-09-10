@@ -1,4 +1,4 @@
-/* nics honey-color: #f0bd69; */
+/* nice honey-color: #f0bd69; */
 
 * {
   margin: 0;
@@ -11,11 +11,10 @@
 
 .App {
   font-size: 1rem;
-  background: linear-gradient(0.25turn, #fbf3d8, white, #fbf3d8);
   /*  font-family: "Source Serif Pro", serif;*/
 }
 
-/* ----- Navbar ---- */
+/* ---------- Navbar --------- */
 
 .navbar-container {
   height: 12.5rem;
@@ -53,370 +52,41 @@
   color: white;
 }
 
+.nav-link:hover {
+  font-style: oblique;
+}
+
+.nav-link::after {
+  position: absolute;
+  bottom: -2px;
+  left: -5%;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: white;
+  height: 2px;
+  transform: scale(0, 1);
+  transition: transform ease-out 0.25s;
+}
+
+.nav-link:hover::after {
+  width: 110%;
+  translate: transformX(-50%);
+  transform: scale(1, 1);
+}
+
 /* ----- About Us ---- */
-
-.about-us {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.about-img-container {
-}
-
-.about-text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-us h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.about-us p {
-  padding: 3rem 4rem;
-  font-size: 1.2rem;
-}
+/* see in about.css */
 
 /* ----- Products ---- */
-
-.about-products {
-  height: 560px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: space-between;
-  justify-content: center;
-  background-image: url("./assets/jars-for-background-resized.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.about-products::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.about-products h1 {
-  position: relative;
-  color: #ffffff;
-  font-size: 2.5rem;
-  margin-top: 3rem;
-}
-
-.about-products p {
-  position: relative;
-  color: #ffffff;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  padding: 7% 10%;
-}
-
-/* ----- Cards ---- */
-
-.card-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  width: 70%;
-  margin: 40px 0;
-}
-
-.honey-card {
-  display: flex;
-  position: relative;
-  height: 400px;
-  margin: 20px auto;
-  background-color: #ab722b;
-}
-
-.honey-card::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 200px solid transparent;
-  border-right: 100px solid #ab722b;
-  border-bottom: 200px solid transparent;
-  left: -100px;
-  z-index: 1;
-}
-
-.honey-card::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 200px solid transparent;
-  border-left: 100px solid #ab722b;
-  border-bottom: 200px solid transparent;
-  right: -100px;
-}
-
-.honey-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  position: relative;
-  width: 280px;
-  height: 400px;
-  padding: 1rem 0;
-  -webkit-transform: scale(0.98, 0.98);
-  -moz-transform: scale(0.98, 0.98);
-  transform: scale(0.98, 0.98);
-  z-index: 1;
-  background-color: white;
-}
-
-.honey-text::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 200px solid transparent;
-  border-right: 100px solid white;
-  border-bottom: 200px solid transparent;
-  left: -99px;
-}
-
-.honey-text::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 200px solid transparent;
-  border-left: 100px solid white;
-  border-bottom: 200px solid transparent;
-  right: -99px;
-}
-
-.honey-text h1 {
-  color: #312f17;
-}
-
-.honey-text p {
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-#jar-pic {
-  top: -100px;
-  padding: 2rem;
-}
+/* see in products.css */
 
 /* ----- Contact ----- */
+/* see in contact.css */
 
-.contact-page-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin: 1rem 3rem;
-}
-
-#contact-header {
-  padding-top: 2rem;
-  text-align: center;
-}
-
-.contact-details-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.phone-email-address-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.7rem;
-  padding: 2rem;
-}
-
-.contacts-wrapper {
-  display: flex;
-}
-
-.contact-card-container {
-  width: 25rem;
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  height: 3rem;
-  background-color: white;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
-  border-radius: 1rem;
-  align-items: center;
-}
-
-.contact-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(to bottom right, #fbf3d8, #e1951b);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: -1rem; */
-}
-
-iframe {
-  width: 400px;
-  height: 280px;
-  border: none;
-  margin: 2rem;
-}
-
-.contact-form-container {
-  position: relative;
-  width: 50%;
-  background-color: black;
-  color: black;
-  margin: 2rem 0;
-  border-radius: 0.5rem;
-  background-image: url("./assets/sarah-janes-tjiP6f7QiOs-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.9);
-}
-
-.contact-form-container::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  border-radius: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.25);
-}
-
-.form-container {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 5fr 1fr;
-  grid-template-areas:
-    "header header"
-    "input1 input1"
-    "input2 input2"
-    "input3 input3"
-    "input4 input4"
-    "button button";
-  gap: 1rem;
-  padding: 2rem;
-  margin: auto;
-}
-
-#form-h1 {
-  grid-area: header;
-  text-align: center;
-}
-
-#name-input,
-#email-address-input,
-#phone-number-input,
-#message-input {
-  border-radius: 0.8rem;
-  border: none;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
-  padding-left: 0.5rem;
-  font-size: 1.1rem;
-  font-family: "Source Serif Pro", serif;
-}
-
-#name-input:focus,
-#email-address-input:focus,
-#phone-number-input:focus,
-#message-input:focus {
-  outline: 2px solid black;
-}
-
-#name-input {
-  grid-area: input1;
-}
-
-#email-address-input {
-  grid-area: input2;
-}
-
-#phone-number-input {
-  grid-area: input3;
-}
-
-#message-input {
-  grid-area: input4;
-  padding-top: 0.5rem;
-}
-
-#send-button {
-  grid-area: button;
-  width: 150px;
-  height: 40px;
-  margin: auto;
-  border-radius: 1.3rem;
-  font-size: 1rem;
-  font-weight: bold;
-  background-color: #ab722b;
-  color: black;
-  border: 2px solid black;
-}
-
-#send-button:hover {
-  background-color: white;
-}
-
-@media screen and (max-width: 900px) {
-  .contact-page-container {
-    flex-direction: column;
-  }
-
-  .contact-form-container {
-    width: 90%;
-  }
-
-  .form-container {
-    padding: 1rem;
-  }
-}
-
-@media screen and (min-width: 900px) and (max-width: 1100px) {
-  .contact-page-container {
-    flex-direction: column;
-  }
-
-  iframe {
-    width: 350px;
-    height: 250px;
-  }
-
-  .contact-form-container {
-    width: 90%;
-  }
-
-  .contact-details-container {
-    flex-direction: row;
-  }
-}
-
-/* ----- Footer ----- */
+/* ---------- Footer ---------- */
 
 .footer-container {
   width: 100%;

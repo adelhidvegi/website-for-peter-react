@@ -20,7 +20,13 @@ const ProductDescription = () => {
         massa enim.Tristique senectus et netus et. Sed ullamcorper morbi
         tincidunt ornare massa eget egestas. Tincidunt lobortis feugiat vivamus
         at augue eget. Amet consectetur adipiscing elit pellentesque habitant
-        morbi tristique senectus et.
+        morbi tristique senectus et. Cras vel lacus diam. Morbi sed semper urna.
+        Cras tristique eu massa eu cursus. Pellentesque id tincidunt nibh, eu
+        tempus elit. Phasellus et nibh ligula. Quisque lacinia vel mi ac
+        vestibulum. Mauris pretium quam nec dapibus bibendum. Orci varius
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+        mus. Curabitur aliquet neque at congue feugiat. Donec tristique leo eu
+        augue convallis, vitae cursus felis pretium.
       </p>
     </div>
   );

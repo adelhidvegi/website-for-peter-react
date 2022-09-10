@@ -54,21 +54,23 @@ const ProductList = () => {
     },
   ];
   return (
-    <>
+    <div>
       <ProductDescription />
-      {honeyTypes.map((item) => {
-        return (
-          <HoneyCard
-            id={item.id}
-            key={item.index}
-            name={item.name}
-            packaging={item.packaging}
-            description={item.description}
-            price={item.price}
-          />
-        );
-      })}
-    </>
+      <div className="product-listing-container">
+        {honeyTypes.map((item) => {
+          return (
+            <HoneyCard
+              id={item.id}
+              key={item.index}
+              name={item.name}
+              packaging={item.packaging}
+              description={item.description}
+              price={item.price}
+            />
+          );
+        })}
+      </div>
+    </div>
   );
 };
 

@@ -1,0 +1,189 @@
+.about-products {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  background-image: url("/src/assets/jars-for-background-resized.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-products::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about-products h1 {
+  position: relative;
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+}
+
+.about-products p {
+  position: relative;
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding: 7% 10%;
+}
+
+/* ---------- Cards --------- */
+
+.product-listing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 70%;
+  margin: 40px 0;
+}
+
+.honey-card {
+  display: flex;
+  position: relative;
+  height: 400px;
+  margin: 20px auto;
+  background-color: #ab722b;
+}
+
+.honey-card::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-right: 100px solid #ab722b;
+  border-bottom: 200px solid transparent;
+  left: -100px;
+  z-index: 1;
+}
+
+.honey-card::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-left: 100px solid #ab722b;
+  border-bottom: 200px solid transparent;
+  right: -100px;
+}
+
+.honey-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  width: 280px;
+  height: 400px;
+  padding: 1rem 0;
+  -webkit-transform: scale(0.98, 0.98);
+  -moz-transform: scale(0.98, 0.98);
+  transform: scale(0.98, 0.98);
+  z-index: 1;
+  background-color: white;
+}
+
+.honey-text::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-right: 100px solid white;
+  border-bottom: 200px solid transparent;
+  left: -99px;
+}
+
+.honey-text::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-left: 100px solid white;
+  border-bottom: 200px solid transparent;
+  right: -99px;
+}
+
+.honey-text h1 {
+  color: #312f17;
+}
+
+.honey-text p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+#jar-pic {
+  top: -100px;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 450px) {
+  .card-container {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .about-products h1 {
+    font-size: 1.7rem;
+    margin-top: 1.3rem;
+  }
+
+  .about-products p {
+    font-size: 0.9rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
+  }
+
+  .honey-card {
+    background-color: #fffae9;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: auto;
+    margin: auto;
+  }
+
+  .honey-card::before,
+  .honey-card::after,
+  .honey-text::before,
+  .honey-text::after {
+    display: none;
+  }
+
+  .honey-text {
+    background-color: #fffae9;
+    font-size: 0.8rem;
+    height: auto;
+    gap: 1.5rem;
+  }
+
+  .honey-text p {
+    font-size: 0.9rem;
+  }
+
+  #jar-pic {
+    width: 16rem;
+    height: auto;
+    padding: 0;
+  }
+}
